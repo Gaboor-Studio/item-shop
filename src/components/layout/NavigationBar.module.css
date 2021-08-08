@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #776A5F;
+    padding-bottom: 10px;
+}
+
+.home {
+    text-decoration: none;
+    text-align: center;
+    color: cornsilk;
+    font-size: 2rem;
+    float: right;
+    margin-right: 3%;
+}
+.shop{
+    text-decoration: none;
+    text-align: center;
+    color: cornsilk;
+    font-size: 2rem;
+    margin-left: 3rem;
+    display: inline;
+}
+.navbarimg {
+    display: inline;
+    height: inherit;
+}
