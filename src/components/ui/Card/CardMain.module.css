@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notonaskharabic.css'); /*font-family: 'Noto Naskh Arabic', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap'); /*font-family: 'Changa', sans-serif;*/
+
 .CardMain {
-  background: #212426;
+  background-image: url('../../../assets/picture/y-so-serious-white.png');
+  background-size: cover;
+  font-family: 'Changa', sans-serif;
+  /* background: #212426; */
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   filter: drop-shadow(-6px -6px 6px rgba(0, 0, 0, 0.60))
@@ -17,10 +23,28 @@
   width: 50%;
 }
 
-.button {
-  background: #776a5f;
+button {
+  /* background: #776a5f; */
   border: 5px solid #2e3234;
+  font-family: 'Noto Naskh Arabic', serif;
+  color: aliceblue;
   border-radius: 30px;
   width: 80%;
   height: 51px;
+}
+
+.green {
+  background-color: rgb(16, 95, 37);
+}
+
+.red {
+  background-color: rgb(144, 58, 9);
+}
+
+.green:hover {
+  background-color: rgb(79, 159, 100);
+}
+
+.red:hover {
+  background-color: rgb(207, 116, 65);
 }
