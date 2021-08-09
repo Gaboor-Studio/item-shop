@@ -6,7 +6,7 @@ const CardMain = (props) => {
             <img src={props.src} alt={props.name}/>
             <p>{props.name}</p>
             <p>{props.price}$</p>
-            <button>افزودن به سبد</button>
+            <button className={classes.button}>افزودن به سبد</button>
         </div>
     );
 }
