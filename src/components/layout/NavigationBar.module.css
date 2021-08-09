@@ -6,10 +6,11 @@
 .home {
     text-decoration: none;
     text-align: center;
-    color: cornsilk;
-    font-size: 2rem;
+    color: #FFFFFF;
+    font-size: 3rem;
     float: right;
     margin-right: 3%;
+    padding-top: 5px;
 }
 .shop{
     text-decoration: none;
