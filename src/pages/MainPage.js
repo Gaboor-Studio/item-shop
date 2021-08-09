@@ -5,6 +5,8 @@ import apple from '../assets/picture/iphone.png';
 import huawei from '../assets/picture/huawei.png';
 import xiaomi from '../assets/picture/xiaomi.png';
 import samsung from '../assets/picture/samsung.png';
+import { useContext, useEffect } from 'react';
+import GoodsContext from "../context/goods-context";
 
 const Goods = [
   {
@@ -30,12 +32,19 @@ const Goods = [
 ];
 
 const MainPage = () => {
+  const GoodsCtx = useContext(GoodsContext);
+
+  useEffect(() => {
+    GoodsCtx.onSetGoods(Goods);
+    console.log(GoodsCtx.Goods);
+  }, [GoodsCtx]);
+
   return (
     <Layout>
       <div className={classes.mainpage}>
         {Goods.map((good) => {
           return (
-            <CardMain src={good.src} name={good.name} price={good.price} />
+            <CardMain key={good.name} src={good.src} name={good.name} price={good.price} />
           );
         })}
       </div>
