@@ -1,29 +1,18 @@
 import { createContext, useState } from 'react';
 
 const GoodsContext = createContext({
-    Goods: [],
     inCart: [],
-    onSetGoods: (newGoods) => {},
-    onAddToCart: (goodId) => {},
+    onAddToCart: (good) => {},
     onRemoveFromCart: (goodId) => {},
     onLookForGood: (goodId) => {}
 })
 
 export const GoodsContextProvider = (props) => {
-    const [goods, setGoods] = useState([])
     const [cartGoods, setCartGoods] = useState([])
 
-    const addGoodsHandler = (Goods) => {
-        setGoods(Goods);
-    }
-
-    const addToCartHandler = (goodId) => {
-        const addedItem = goods.filter((good) => {
-            return good.name === goodId
-        })
-
+    const addToCartHandler = (newGood) => {
         setCartGoods(prevCartGoods => {
-            return prevCartGoods.concat(addedItem);
+            return prevCartGoods.concat(newGood);
         })
     }
 
@@ -40,9 +29,7 @@ export const GoodsContextProvider = (props) => {
     }
 
     const content = {
-        Goods: goods,
         inCart: cartGoods,
-        onSetGoods: addGoodsHandler,
         onAddToCart: addToCartHandler,
         onRemoveFromCart: removeFromCartHandler,
         onLookForGood: isInCart
