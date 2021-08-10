@@ -11,7 +11,7 @@ const CartPage = () => {
       <div className={classes.CartPage} >
         {GoodsCtx.inCart.map((good) => {
           return (
-            <CardCart key={good.name} src={good.src} name={good.name} price={good.price}/>
+            <CardCart key={good.name} src={good.src} name={good.name} price={good.price} count={good.count}/>
           );
         })}
       </div>

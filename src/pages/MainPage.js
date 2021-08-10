@@ -14,17 +14,17 @@ const Goods = [
     price: 1000,
   },
   {
-    src: huawei,
+    src: samsung,
     name: "galaxy s21",
     price: 700,
   },
   {
-    src: xiaomi,
+    src: huawei,
     name: "huawei p50",
     price: 700,
   },
   {
-    src: samsung,
+    src: xiaomi,
     name: "xiaomi m11",
     price: 600,
   },

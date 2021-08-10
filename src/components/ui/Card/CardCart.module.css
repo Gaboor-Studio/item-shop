@@ -16,7 +16,7 @@
     grid-template-areas: 
       ". . caption picture"
       "remove . caption picture"
-      ". . . picture";
+      ". . caption picture";
     /* grid-template-columns: [left] 1fr [middle] 7fr [right] 2fr;
     grid-template-rows: [top]1fr [center]2fr [bottom]2fr;  */
     /* grid-gap: 1rem; */
@@ -47,4 +47,20 @@
   padding-top: 1rem;
   width: 100px;
   /* justify-self: flex-end; */
+}
+
+/* .count {
+  background-color: blue;
+} */
+
+.middle p {
+  margin: 10px;
+}
+
+.count button {
+  margin: 0;
+  color: #776A5F;
+  font-size: large;
+  font-weight: bolder;
+  width: 35%;
 }
