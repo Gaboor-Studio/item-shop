@@ -8,19 +8,43 @@
     color: #776A5F;
     width: 98%;
     font-size: 2rem;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     height:inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      ". . caption picture"
+      "remove . caption picture"
+      ". . . picture";
+    /* grid-template-columns: [left] 1fr [middle] 7fr [right] 2fr;
+    grid-template-rows: [top]1fr [center]2fr [bottom]2fr;  */
+    /* grid-gap: 1rem; */
   }
   
-.image {
-    float: right;
-    width: 10%;
+.right {
+    /* background-color: wheat; */
+    grid-area: picture;
+    justify-self: center;
 }
   
-.button{
-    float: left;
-    width: 5%;
+.left{
+    cursor: pointer;
+    margin-left: 5rem;
+    /* background-color: thistle; */
+    grid-area: remove;
+}
+
+.middle {
+  /* background-color: turquoise; */
+  text-align: center;
+  grid-area: caption;
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
+}
+
+.right img {
+  padding-top: 1rem;
+  width: 100px;
+  /* justify-self: flex-end; */
 }

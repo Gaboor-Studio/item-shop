@@ -9,11 +9,10 @@ const NavigationBar = () => {
         <Link to="/" className={classes.home}>
           گبور شاپ
         </Link>
-        <div className={classes.navbarimg}>
-          <Link className={classes.shop} to="/cart">
-            <img src={shop} className={classes.navbarimg} alt="" />
-          </Link>
-        </div>
+
+        <Link className={classes.shop} to="/cart">
+          <img src={shop} className={classes.navbarimg} alt="" />
+        </Link>
       </nav>
     </header>
   );
