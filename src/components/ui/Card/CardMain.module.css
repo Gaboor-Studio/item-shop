@@ -12,11 +12,13 @@
     drop-shadow(6px 6px 6px rgba(247, 247, 248, 0.16));
   border-radius: 10px;
   color: #776A5F;
-  width: 80%;
+  display: inline-block;
   font-size: 2rem;
+  width: 20%;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin: 10px;
 }
 
 .CardMain img {

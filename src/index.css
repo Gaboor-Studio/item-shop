@@ -11,3 +11,7 @@ code {
   font-family: IRANSans,
     monospace;
 }
+@font-face {
+  font-family: 'IranSans';
+  src: local('IranSans'), url(./FontsFree-Net-ir_sans.ttf) format('truetype');
+}
