@@ -1,7 +1,6 @@
 .mainpage{
 }
 .scroll{
-    background-color: aquamarine;
     overflow:auto;
     white-space:nowrap;
     direction: rtl;

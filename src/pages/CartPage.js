@@ -1,4 +1,5 @@
 import Layout from "../components/layout/Layout";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import GoodsContext from "../context/goods-context";
 import CardCart from "../components/ui/Card/CardCart";
@@ -14,7 +15,8 @@ const CartPage = () => {
             <CardCart key={good.name} src={good.src} name={good.name} price={good.price} count={good.count}/>
           );
         })}
-      </div>
+         <Link to="/Submit" className={classes.button}>نهایی کردن خرید</Link>
+      </div>    
     </Layout>
   );
 };

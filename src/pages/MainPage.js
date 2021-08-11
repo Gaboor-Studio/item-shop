@@ -71,72 +71,19 @@ const MainPage = () => {
   return (
     <Layout>
       <div className={classes.mainpage}>
-      <div className={classes.scroll}>
-          
-        {goodsState.map((good) => {
+        <div className={classes.scroll}>
+          {goodsState.map((good) => {
             return (
-            <CardMain
-              key={good.name}
-              src={good.src}
-              name={good.name}
-              price={good.price}
-            />
+              <CardMain
+                key={good.name}
+                src={good.src}
+                name={good.name}
+                price={good.price}
+              />
             );
-        })}
-      </div>;
-      <div className={classes.scroll}>
-          
-        {goodsState.map((good) => {
-            return (
-            <CardMain
-              key={good.name}
-              src={good.src}
-              name={good.name}
-              price={good.price}
-            />
-            );
-        })}
-      </div>;
-      <div className={classes.scroll}>
-          
-        {goodsState.map((good) => {
-            return (
-            <CardMain
-              key={good.name}
-              src={good.src}
-              name={good.name}
-              price={good.price}
-            />
-            );
-        })}
-      </div>;
-      <div className={classes.scroll}>
-          
-        {goodsState.map((good) => {
-            return (
-            <CardMain
-              key={good.name}
-              src={good.src}
-              name={good.name}
-              price={good.price}
-            />
-            );
-        })}
-      </div>;
-      <div className={classes.scroll}>
-          
-        {goodsState.map((good) => {
-            return (
-            <CardMain
-              key={good.name}
-              src={good.src}
-              name={good.name}
-              price={good.price}
-            />
-            );
-        })}
-      </div>;
-      
+          })}
+        </div>
+        ;
       </div>
     </Layout>
   );

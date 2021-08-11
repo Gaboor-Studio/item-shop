@@ -4,3 +4,20 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+.button {
+    background-color: darkcyan;
+    border-radius: 2rem;
+    filter: drop-shadow(-6px -6px 6px rgba(0, 0, 0, 0.60))
+            drop-shadow(6px 6px 6px rgba(247, 247, 248, 0.16));
+    border: darkgrey solid 2px;
+    width: 300px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'IranSans';
+    float: left;
+}
+.button:hover{
+    background-color: rgb(19, 59, 59);
+}

@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import CartPage from "./pages/CartPage";
+import SubmitPage from "./pages/SubmitPage";
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
       <Route path="/cart">
         <CartPage />
       </Route>
-    </Switch>
+      <Route path="/submit">
+        <SubmitPage/> 
+      </Route>
+      </Switch>
   );
 }
 
