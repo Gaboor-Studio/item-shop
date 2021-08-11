@@ -18,9 +18,12 @@ const SubmitPage = () => {
        userInfo.last_name.length>0&&
        userInfo.email.length>0&&
        userInfo.address.length>0&&
-       userInfo.email.includes("@")
+       userInfo.email.includes("@")&&
+       userInfo.email.includes(".")
       )
       setButtonDisabled(false);
+    else
+      setButtonDisabled(true);
   },[userInfo])
 
   const onSubmitHandler = (event) => {
