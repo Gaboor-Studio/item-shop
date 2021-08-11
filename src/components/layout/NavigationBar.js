@@ -25,7 +25,7 @@ const NavigationBar = () => {
   }, [scrollState]);
 
   return (
-    <header className={scrollState==="amir" ? classes.bottomnav : classes.navbar}>
+    <header className={scrollState=="amir" ? classes.bottomnav : classes.navbar}>
       <nav>
         <Link to="/" className={classes.home}>
           گبور شاپ

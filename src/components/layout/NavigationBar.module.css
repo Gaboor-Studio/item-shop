@@ -5,12 +5,14 @@
     background-color:rgb(15, 15, 199);
     width: 100%;
     position: fixed;
+    height: 15%;
     z-index: 1;
 }
-.bottom {
+.bottomnav {
     background-color:#556;
     width: 100%;
     position: fixed;
+    height: 15%;
     z-index: 1;
 }
 

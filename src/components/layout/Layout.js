@@ -5,6 +5,7 @@ const Layout = (props) => {
   return (
     <div>
       <NavigationBar />
+      <div className={classes.pad}></div>
       <div className={classes.layout}>{props.children}</div>
     </div>
   );
