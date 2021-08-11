@@ -1,6 +1,7 @@
 import classes from './Spinner.module.css';
 import Backdrop from '../BackDrop/BackDrop';
-import Aux from '../../../hoc/Au/Auxiliary';
+import Aux from '../../../hoc/Auxiliary/Auxiliary';
+import React from 'react';
 
 const Spinner = (props) => {
     return (
