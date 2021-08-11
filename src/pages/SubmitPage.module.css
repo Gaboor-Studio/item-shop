@@ -7,9 +7,17 @@
     /* align-content: center; */
 }
 
+
 .form button {
     width: 30%;
     border: royalblue 2px solid;
+    background-color:brown;
+}
+form button:disabled{
+    background-color:brown;
+    opacity: 0.5;
+    
+
 }
 
 .person {

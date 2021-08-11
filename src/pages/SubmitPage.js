@@ -1,16 +1,27 @@
 import Layout from "../components/layout/Layout";
 import classes from "./SubmitPage.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useHistory } from 'react-router-dom'
 
 const SubmitPage = () => {
   const history = useHistory();
+  const [buttonDisabled, setButtonDisabled] = useState(true);
   const [userInfo, setUserInfo] = useState({
     first_name: "",
     last_name: "",
     email: "",
     address: "",
   });
+
+  useEffect(()=>{
+    if(userInfo.first_name.length>0&&
+       userInfo.last_name.length>0&&
+       userInfo.email.length>0&&
+       userInfo.address.length>0&&
+       userInfo.email.includes("@")
+      )
+      setButtonDisabled(false);
+  },[userInfo])
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
@@ -39,6 +50,7 @@ const SubmitPage = () => {
       };
       return newState;
     });
+    console.log(userInfo);
   };
 
   return (
@@ -90,7 +102,7 @@ const SubmitPage = () => {
               onChange={onInputChangeHandler}
             ></textarea>
           </div>
-          <button onSubmit={onSubmitHandler}>ثبت نهایی</button>
+          <button onSubmit={onSubmitHandler} disabled={buttonDisabled}>ثبت نهایی</button>
         </form>
       </div>
     </Layout>
