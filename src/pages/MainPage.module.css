@@ -1,6 +1,8 @@
 .mainpage{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-left: 5%;
-    margin-left: 5%;
+}
+.scroll{
+    background-color: aquamarine;
+    overflow:auto;
+    white-space:nowrap;
+    direction: rtl;
 }

@@ -1,3 +1,6 @@
 .layout{
-    padding: 20px 20px 20px 20px;
+    padding-bottom: 20px;
+}
+.pad{
+    padding-top: 10%;
 }
