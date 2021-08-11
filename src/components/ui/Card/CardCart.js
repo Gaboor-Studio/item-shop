@@ -26,6 +26,11 @@ const CardCart = (props) => {
       <div className={classes.middle}>
         <p>{props.name}</p>
         <p>{props.price}$</p>
+        <div className={classes.count}>
+          <p>{props.count}</p>
+          <button onClick={() => GoodsCtx.onIncreaseCount(props.name)}>+</button>
+          <button onClick={() => GoodsCtx.onDecreaseCount(props.name)}>-</button>
+        </div>
       </div>
       <div className={classes.right}>
         <img src={props.src} alt={props.name} />
