@@ -75,7 +75,7 @@ const MainPage = () => {
           {goodsState.map((good) => {
             return (
               <CardMain
-                key={good.name}
+                key={Math.random()*100}
                 src={good.src}
                 name={good.name}
                 price={good.price}
