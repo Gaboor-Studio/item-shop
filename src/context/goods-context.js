@@ -39,7 +39,7 @@ export const GoodsContextProvider = (props) => {
       if (op > 0) {
         const changedProduct = {
           ...toBeChangedProduct,
-          count: count + 1,
+          count: parseInt(count) +1,
         };
         newCart[itemIndex] = changedProduct;
       } else if (op < 0 && count > 1){
