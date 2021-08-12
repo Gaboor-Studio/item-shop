@@ -13,7 +13,7 @@
   border-radius: 10px;
   color: #776A5F;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 20%;
   text-align: center;
   padding-top: 5px;
@@ -22,17 +22,17 @@
 }
 
 .CardMain img {
-  width: 50%;
+  width: 30%;
 }
 
 button {
   /* background: #776a5f; */
   border: 5px solid #2e3234;
-  font-family: 'Noto Naskh Arabic', serif;
+  font-family: "IranSans";
   color: aliceblue;
   border-radius: 30px;
   width: 80%;
-  height: 51px;
+  height: 50px;
 }
 
 .green {
