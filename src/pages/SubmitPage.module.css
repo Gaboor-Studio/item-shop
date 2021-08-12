@@ -1,8 +1,10 @@
 .form {
     margin-top: 20%;
-    background-color: azure;
-    width: 50%;
+    background-color: rgb(226, 223, 223);
+    width: 80%;
     padding: 1rem;
+    border-radius: 10px;
+    border: #776A5F 2px solid;
     margin: auto;
     /* align-content: center; */
 }
@@ -10,32 +12,43 @@
 
 .form button {
     width: 30%;
-    border: royalblue 2px solid;
-    background-color:brown;
+    border: rgb(77, 77, 77) 2px solid;
+    background-color:#684221;
 }
 form button:disabled{
-    background-color:brown;
-    opacity: 0.5;
-    
-
+    background-color:#776A5F;
 }
 
 .person {
     /* box-shadow: 10px 10px 3px 1px rgba(0,0,0,50); */
-    border: cadetblue 1px solid;
+    border: #776A5F 2px solid;
     padding: 1rem;
+    border-radius:10px ;
 } 
 
 .person input{
     margin: 10px 50px;
+    border-radius: 10px;
+    font-size: large;
+    border-color: #776A5F;
+    height: 50px;
+    width: 300px;
 }
 
 .address {
     margin: 1rem 0;
+    border-radius: 10px;
     padding: 1rem;
-    border: violet 1px solid;
+    border: #776A5F 2px solid;
 }
-
+.address textarea{
+    border-radius: 10px;
+    font-size:large;
+    height: 200px;
+    width: 400px;
+    margin: 0px 90px;
+    border: #776A5F;
+}
 
 @media (max-width: 600px) {
 

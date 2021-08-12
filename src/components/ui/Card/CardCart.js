@@ -17,19 +17,19 @@ const CardCart = (props) => {
   return (
     <div className={classes.CardCart}>
       <div className={classes.left}>
-        <img
-          src={trash}
-          onClick={onToggleGoodInCart}
-          alt="remove"
-        />
+        <img src={trash} onClick={onToggleGoodInCart} alt="remove" />
       </div>
       <div className={classes.middle}>
         <p>{props.name}</p>
         <p>{props.price}$</p>
         <div className={classes.count}>
-          <p>{props.count}</p>
-          <button onClick={() => GoodsCtx.onIncreaseCount(props.name)}>+</button>
-          <button onClick={() => GoodsCtx.onDecreaseCount(props.name)}>-</button>
+          <button onClick={() => GoodsCtx.onDecreaseCount(props.name)}>
+            -
+          </button>
+          {props.count}
+          <button onClick={() => GoodsCtx.onIncreaseCount(props.name)}>
+            +
+          </button>
         </div>
       </div>
       <div className={classes.right}>
